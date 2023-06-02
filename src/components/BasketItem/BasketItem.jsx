@@ -30,11 +30,11 @@ export default function BasketItem({
         </div>
       </div>
       {discont_price === null ? (
-        <p className={s.realy_price}>{price*count} $</p>
+        <p className={s.realy_price}>{(price*count).toFixed} $</p>
       ) : (
         <div className={s.all_price}>
-          <p className={s.realy_price}>{discont_price} $</p>
-          <p className={s.old_price}>{price*count} $</p>
+          <p className={s.realy_price}>{(discont_price * count).toFixed(0)} $</p>
+          <p className={s.old_price}>{(price*count).toFixed(0)} $</p>
         </div>
       )}
       <GrFormClose className={s.close_btn} onClick={() => dispatch(basketRemoveAction(id))}/>

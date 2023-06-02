@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import s from "./style.module.css";
+import { basketClearAction } from "../../store/reducer/basketReducer";
 
 export default function BasketCalculation() {
   const { basket, products } = useSelector((state) => state);
@@ -22,10 +23,17 @@ export default function BasketCalculation() {
         <p className={s.title_total}>Total</p>
         <p className={s.count_total}>{totalPrice}$</p>
       </div>
-      <div className={s.box_input}>
-        <input className={s.phone_input} type="tel" placeholder="Phone number" required />
-        <input className={s.order_input} type="submit" value="Order" />
-      </div>
-    </div> 
+      <form className={s.box_input}>
+        <input
+          className={s.phone_input}
+          type="tel"
+          name="number"
+          maxLength="14"
+          minLength="14"
+          placeholder=" Phone number "
+        />
+        <button className={s.order_input} onClick={() => dispatch(basketClearAction())}>Order</button>
+      </form>
+    </div>
   );
 }

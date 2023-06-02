@@ -35,9 +35,11 @@ export const productsSortTitleAction = (payload) => ({
   payload,
 });
 
-const getPrice = ({ price, discountPercentage }) => {
-  return price - (price * discountPercentage) / 100;
-};
+const getPrice = ({price, discont_price}) => {
+  let realy_price = discont_price !== null ? discont_price : price;
+  return realy_price;
+
+}
 
 export const productsSortFromToFilterAction = (minPrice, maxPrice) => ({
   type: PRODUCTS_SORT_FROM_TO_FILTER,
@@ -62,17 +64,19 @@ export const productsReducer = (state = [], action) => {
         return state;
       }
     case PRODUCTS_SORT_PRICE_FILTER:
-      if (action.payload === "ascend") {
-        return [...state].sort((a, b) => getPrice(a) - getPrice(b));
-      } else {
+      if (action.payload === "ascend_price") {
+        return [...state].sort((a,b) => getPrice(a) - getPrice(b));
+      } else if (action.payload === "descend_price"){
         return [...state].sort((a, b) => getPrice(b) - getPrice(a));
+      }else if(action.payload === "default"){
+        return state; 
       }
-    case PRODUCTS_SORT_TITLE_FILTER:
-      if (action.payload === "ascend") {
-        return [...state].sort((a, b) => a.title.localeCompare(b.title));
-      } else {
-        return [...state].sort((a, b) => b.title.localeCompare(a.title));
-      }
+    // case PRODUCTS_SORT_TITLE_FILTER:
+    //   if (action.payload === "ascend") {
+    //     return [...state].sort((a, b) => a.title.localeCompare(b.title));
+    //   } else {
+    //     return [...state].sort((a, b) => b.title.localeCompare(a.title));
+    //   }
     default:
       return state;
   }
