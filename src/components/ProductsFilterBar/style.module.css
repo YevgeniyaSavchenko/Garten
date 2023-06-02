@@ -1,0 +1,47 @@
+.filter_box {
+  max-width: 1440px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.price_box input {
+  height: 42px;
+  width: 103px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+
+.discount_box input {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+
+.sorted_box select {
+  width: 219px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+}
+.price_box,
+.sorted_box,
+.discount_box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.price_box p,
+.sorted_box p,
+.discount_box p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}

@@ -1,0 +1,64 @@
+.basket_calculation {
+  width: 496px;
+  height: 400px;
+  border: 2px solid rgb(51, 105, 10);
+  padding: 30px;
+  border-radius: 10px;
+  
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.total_box {
+  display: flex;
+  justify-content: space-between;
+  width: 446px;
+  height: 73px;
+  left: 939px;
+  top: 492px;
+}
+.title_total {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.count_total {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.box_input {
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_input {
+  width: 446px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 17px;
+  border: 2px solid rgb(51, 105, 10);
+
+}
+
+.order_input {
+  width: 446px;
+  height: 70px;
+  text-align: center;
+  background: #339933;
+  border-radius: 17px;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+}

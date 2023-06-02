@@ -1,0 +1,75 @@
+.discount_block {
+  background: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+  height: 480px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  justify-items: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.discount_innerblock {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.discount_p1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.discount_p2 {
+  margin-top: -40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #fff;
+  padding: 20px;
+}
+
+.input_number {
+  width: 473px;
+  height: 75.44px;
+  background: #ffffff;
+  border-radius: 25.1468px;
+  border: none;
+  font-size: 30px;
+  padding-left: 30px;
+
+
+}
+
+.discount_btn {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.7392px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  width: 473px;
+  height: 75.44px;
+  border: 2.39494px solid #ffffff;
+  border-radius: 25.1468px;
+  background: none;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.discount_form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

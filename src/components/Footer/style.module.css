@@ -1,0 +1,49 @@
+.footer {
+  margin: 0 auto;
+  height: 933px;
+  width: 1440px;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 870px 1fr;
+  grid-template-rows: 120px 120px 120px;
+  align-items: center;
+}
+.p_contact {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+}
+.p_number {
+  font-size: 70px;
+  font-weight: 600;
+}
+.link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  color: #000;
+}
+.footer_icons {
+  display: grid;
+  grid-template-columns: 100px 100px;
+  justify-items: center;
+  gap:20px;
+  font-weight: 600;
+  font-size: 15px;
+
+
+}
+
+
+.p_text1{
+  font-weight: 500;
+  font-size:18px;
+}
+.p_text2{
+  font-weight: 600;
+  font-size: 24px;
+}

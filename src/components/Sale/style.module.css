@@ -1,0 +1,19 @@
+.sale {
+  max-width: 1440px;
+  margin: 30px;
+}
+.sale_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+
+.sale_products{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: 400px;
+gap: 10px;
+}

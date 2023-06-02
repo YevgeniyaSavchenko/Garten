@@ -1,0 +1,110 @@
+.description_page {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.description_page h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin: 20px;
+}
+.box {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  gap: 20px;
+}
+.img_item {
+  width: 710px;
+  height: 710px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+}
+.price_box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+}
+.price {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+}
+.btn_add_to_box {
+  width: 340px;
+  height: 85px;
+  background: #339933;
+  border: 2px solid #339933;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.description_box {
+  padding-top: 20px;
+  border-top: 2px dashed #c0c0c0;
+}
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+ margin-bottom: 15px;
+}
+.t_description {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.main_price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.old_price {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-decoration-line: line-through;
+  color: #8b8b8b;
+}
+
+.discount {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: #ff32a1;
+}
+.btn_add_to_box {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 130%;
+  color: #ffffff;
+}

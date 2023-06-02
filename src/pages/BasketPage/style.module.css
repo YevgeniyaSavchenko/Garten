@@ -1,0 +1,12 @@
+.container{
+   max-width: 1440px;
+   gap: 20px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 30px;
+
+  
+}
+.basket_items{
+
+}

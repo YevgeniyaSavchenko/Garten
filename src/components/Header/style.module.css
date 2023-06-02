@@ -1,0 +1,54 @@
+.header {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 10px 0px;
+  display: grid;
+  grid-template-columns: 150px 200px 1fr 50px;
+  align-items: center;
+  font-family: "Montserrat";
+}
+.img_logo {
+  margin: 19px 28px;
+
+  width: 72px;
+  height: 72px;
+}
+.btn_cat {
+  width: 125px;
+  height: 49px;
+  padding: 14px 30px 15px;
+  color: white;
+  font-weight: 700;
+  line-height: 19px;
+  font-size: 16px;
+  background-color: #339933;
+  border-radius: 5px;
+  border: none;
+  font-family: "Montserrat";
+}
+
+.nav {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 70px;
+
+  top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+}
+.nav a:hover {
+  color: #339933;
+}
+
+.img_cart {
+  height: 30px;
+  width: 25px;
+}

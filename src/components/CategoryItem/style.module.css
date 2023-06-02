@@ -1,0 +1,26 @@
+.categoryItem {
+  text-decoration: none;
+}
+
+.box {
+  width: 318px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.image_category {
+  width: 318px;
+  height: 350px;
+
+}
+.label_p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: black;
+}
